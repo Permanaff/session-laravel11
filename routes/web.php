@@ -11,6 +11,6 @@ Route::get('/register', function () {
     return view('daftar');
 });
 
-Route::get('/helo', function () {
-    return view('daftar');
+Route::get('/dashboard', function () {
+    return view('dashboard');
 });

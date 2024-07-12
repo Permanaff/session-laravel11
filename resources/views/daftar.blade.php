@@ -27,7 +27,7 @@
                     <input type="password" class="form-control rounded-0" id="password" placeholder="Masukkan Password">
                 </div>
 
-                <button class="btn btn-primary w-100 fw-bold my-2">Login</button>
+                <button class="btn btn-primary w-100 fw-bold my-2" type="su">Login</button>
                 <p class="text-center my-2">Belum Memiliki Akun? <span><a href="{{ url('/') }}" style="text-decoration: none">Login</a></span></p>
             </div>
         </div>
