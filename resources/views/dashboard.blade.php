@@ -15,7 +15,14 @@
 
         .navbar {
             background-color: cornflowerblue;
+            padding-left: 100px;
+            padding-right: 100px;
         }
+
+        .card-custom {
+            width: 100vh;
+        }
+
     </style>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -57,7 +64,9 @@
     </nav>
 
     <div class="container d-flex justify-content-center mt-5">
-        <h1 class="fs-1 fw-bold">Selamat Datang!</h1>
+        <div class="card-custom border rounded-0 p-3">
+            <h1 class="fs-1 fw-bold text-center">Selamat Datang!</h1>
+        </div>
     </div>
 
 
