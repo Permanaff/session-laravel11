@@ -18,10 +18,18 @@ class AuthController extends Controller
         $data = User::where('email', $request->email)->firstOrFail();
         if ($data) {
             if (Hash::check($request->password,$data->password)) {
+                session(['berhasil_login' => true]);
                 return redirect('/dashboard');
             }
-            return redirect('/')->with('massage', 'Email atau Password Salah');
+            return redirect('/')->with('message', 'Email atau Password Salah');
         }
     }
+
+    public function logout(Request $request) {
+        $request->session()->flush();
+        return redirect('/');
+    }
+
+
 
 }
